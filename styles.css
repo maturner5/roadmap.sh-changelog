@@ -1,0 +1,96 @@
+body {
+    font-family: sans-serif;
+    margin: 15px;
+  }
+  
+  .changelog {
+    margin: auto;
+    max-width: 800px;
+    border: solid black 2px;
+    border-radius: 30px;
+    padding: 30px 30px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+      & .changelog__title {
+        margin: 0;
+        padding: 0;
+      }
+    
+      & .changelog__subtitle {
+        text-align: center;
+      }
+    
+      & .changelog__item {
+        display: flex;
+        flex-direction: column;
+        
+          & * {
+            display: flex;
+            padding-top: 5px;
+          }
+        
+          & .changelog__item__date {
+            flex: 0 1 150px;
+            width: 75px;
+            padding-right: 15px;
+            text-align: right;
+          }
+        
+          & .changelog__item__changes {
+            flex-basis: 0 1 500px;
+          }
+      }
+
+      & .changelog__dates-and-changes {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 30px 0px;
+
+        & .changelog__dates {
+            display: flex;
+            flex-direction: column;
+            padding-right: 20px;
+            align-items: end;
+            color: #c1c1c1;
+        }
+
+        & .changelog__dots {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            left: 10px;
+
+            & .dot {
+                height: 19px;
+                width: 19px;
+                background-color: black;
+                border-radius: 50%;
+                margin: 16px 0;
+            }
+        }
+
+        & .changelog__changes {
+            display: flex;
+            flex-direction: column;
+            border-left: solid black 1px;
+            padding-left: 30px;
+        }
+      }
+  }
+  
+  .changelog__item div:first_child {
+    background-color: red;
+  }
+
+.changelog__button {
+    background-color: black;
+    color: white;
+    padding: 12px 30px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 10px;
+}
