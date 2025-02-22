@@ -23,27 +23,6 @@ body {
       & .changelog__subtitle {
         text-align: center;
       }
-    
-      & .changelog__item {
-        display: flex;
-        flex-direction: column;
-        
-          & * {
-            display: flex;
-            padding-top: 5px;
-          }
-        
-          & .changelog__item__date {
-            flex: 0 1 150px;
-            width: 75px;
-            padding-right: 15px;
-            text-align: right;
-          }
-        
-          & .changelog__item__changes {
-            flex-basis: 0 1 500px;
-          }
-      }
 
       & .changelog__dates-and-changes {
         display: flex;
